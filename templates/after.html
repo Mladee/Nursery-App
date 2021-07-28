@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "static/style.css">
+</head>
+
+
+
+<body>
+
+<style>
+body {
+
+  background-image: url("https://images.pexels.com/photos/8923982/pexels-photo-8923982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: 300%;
+}
+</style>
+
+ <center>
+
+        <h3 style = "color: #1c1818;">  Prediction:  </h3>
+
+    {%if data == 0%}
+    <h1 style = "color: #fc030b;">We regret to inform you that this student's status is: Not Recommended</h1>
+
+    {%elif data == 1%}
+    <h1 style = "color: #005c2c;">This student is: Recommended for the nursery school</h1>
+
+     {%elif data == 2%}
+    <h1 style = "color: #005c2c;">Congratulations! This student is: Very Recommended for the nursery school! </h1>
+
+     {%elif data == 3%}
+    <h1 style = "color: #005c2c;">Congratulations! This student is a Priority for the nursery school!</h1>
+
+     {%elif data == 4%}
+      <h1 style = "color: #005c2c;">Congratulations! This student is a Special Priority for the nursery school!!</h1>
+
+     {%endif%}
+
+        <br><br>
+    <a href='/' style = "color: #1c1818;" >Go back to HOME</a>
+
+    </center>
+
+<br><br><br><br><br><br>
+<div class = "Mlade">
+
+    <h3>Thank you for visiting my project!</h3>
+    <br><br><br><br>
+    <p>©Mlade 2021</p>
+
+
+
+
+</div>
+
+
+</body>
+</html>

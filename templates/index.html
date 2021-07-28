@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nursery Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel = "stylesheet" href = "static/style.css">
+</head>
+
+<body>
+
+<img
+        src="https://upload.wikimedia.org/wikipedia/ro/thumb/5/51/Logo_Universitatea_Politehnica_din_Bucure%C8%99ti.svg/1200px-Logo_Universitatea_Politehnica_din_Bucure%C8%99ti.svg.png",
+        width="100", height="70", style="float:left">
+<div class = "Title">
+<h2 style = "color: #1c1818;">Nursery Predictor</h2>
+</div>
+<style>
+body {
+
+  background-image: url("https://images.pexels.com/photos/895508/pexels-photo-895508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+</style>
+
+
+<div class="login">
+
+    <form action="/predict" method="post">
+
+
+
+
+                    <div class="card">
+                        <div class="container">
+                            <h4><b>Parents Behaviour</b></h4>
+    	                        <select name= "Parents Behaviour" id="Parents Behaviour" required="required">
+                                    <option value="Usual">Usual</option>
+                                    <option value="Pretentious">Pretentious</option>
+                                    <option value="Very Pretentious">Very Pretentious</option>
+                                </select>
+                        </div>
+                    </div>
+                        <div class="card">
+                            <div class="container">
+                                <h4><b>Nursery Status</b></h4>
+                                    <select name= "Nursery Status" id="Nursery Status" required="required">
+                                        <option value="Very Critical">Very Critical</option>
+                                        <option value="Critical">Critical</option>
+                                        <option value="Improper">Improper</option>
+                                        <option value="Not very proper">Not very proper</option>
+                                        <option value="Proper">Proper</option>
+                                    </select>
+                                </div>
+                         </div>
+                                <div class="card">
+                            <div class="container">
+                                <h4><b>Form</b></h4>
+                                    <select name= "Form" id="Form" required="required">
+                                        <option value="Complete">Complete</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Incomplete">Incomplete</option>
+                                        <option value="Foster">Foster</option>
+                                    </select>
+                                </div>
+                         </div>
+                                <div class="card">
+                            <div class="container">
+                                <h6><b>Children in the family</b></h6>
+                                    <select name= "Children" id="Children" required="required">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="More">More</option>
+                                    </select>
+                                </div>
+                         </div>
+                                <div class="card">
+                            <div class="container">
+                                <h4><b>Housing</b></h4>
+                                    <select name= "Housing" id="Housing" required="required">
+                                        <option value="Convenient">Convenient</option>
+                                        <option value="Less Convenient">Less Convenient</option>
+                                        <option value="Critical">Critical</option>
+                                    </select>
+                                </div>
+                         </div>
+                                <div class="card">
+                            <div class="container">
+                                <h4><b>Finance</b></h4>
+                                    <select name= "Finance" id="Finance" required="required">
+                                        <option value="Convenient">Convenient</option>
+                                        <option value="Inconvenient">Inconvenient</option>
+                                    </select>
+                                </div>
+                         </div>
+                                 <div class="card">
+                            <div class="container">
+                                <h4><b>Social</b></h4>
+                                    <select name= "Social" id="Social" required="required">
+                                        <option value="Non-Problematic">Non-Problematic</option>
+                                        <option value="Slightly Problematic">Slightly Problematic</option>
+                                        <option value="Problematic">Problematic</option>
+                                    </select>
+                                </div>
+                         </div>
+                                <div class="card">
+                                    <div class="container">
+                                <h4><b>Health</b></h4>
+                                    <select name= "Health" id="Health" required="required">
+                                        <option value="Recommended">Recommended</option>
+                                        <option value="Priority">Priority</option>
+                                        <option value="Not Recommended">Not Recommended</option>
+                                    </select>
+                                </div>
+                         </div>
+
+
+                 <input type="submit" value="Submit" class="btn btn-secondary">
+
+
+
+
+    </form>
+    </div>
+
+
+
+
+ </div>
+
+
+
+</body>
+</html>
